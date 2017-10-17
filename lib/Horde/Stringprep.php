@@ -3,7 +3,7 @@
  * Copyright 2012-2015 Lorenz Schori <lo@znerol.ch>
  * Copyright 2014-2017 Horde LLC (http://www.horde.org/)
  *
- * See the enclosed file COPYING for license information (GPLv3). If you
+ * See the enclosed file LICENSE for license information (GPLv3). If you
  * did not receive this file, see http://opensource.org/licenses/gpl-3.0.html.
  *
  * @category  Horde
