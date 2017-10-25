@@ -1,8 +1,30 @@
 ---
 id: Stringprep
 name: Internationalized strings preparation library
-full: >
+full: |-
   PHP implementation of RFC 3454 - Preparation of Internationalized Strings ("stringprep").
 description: Horde wrapper around the znerol/php-stringprep package.
 list: dev
 type: library
+authors:
+  -
+    name: Michael Slusarz
+    user: slusarz
+    email: slusarz@horde.org
+    active: true
+    role: lead
+version:
+  release: 1.0.5
+  api: 1.0.0
+state:
+  release: stable
+  api: stable
+license:
+  identifier: LGPL-3.0
+  uri: http://opensource.org/licenses/lgpl-3.0.html
+dependencies:
+  required:
+    php: ^5.3 || ^7
+    ext:
+      iconv: '*'
+      intl: '*'
