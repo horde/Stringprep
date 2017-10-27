@@ -10,7 +10,7 @@
   <email>slusarz@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-10-17</date>
+ <date>2017-10-27</date>
  <version>
   <release>1.0.5</release>
   <api>1.0.0</api>
@@ -98,6 +98,13 @@
      <file name="autoload.php" role="php" />
     </dir> <!-- /bundle/vendor -->
    </dir> <!-- /bundle -->
+   <dir name="doc">
+    <dir name="Horde">
+     <dir name="Stringprep">
+      <file name="CHANGES" role="doc" />
+     </dir> <!-- /doc/Horde/Stringprep -->
+    </dir> <!-- /doc/Horde -->
+   </dir> <!-- /doc -->
    <dir name="lib">
     <dir name="Horde">
      <file name="Stringprep.php" role="php" />
@@ -174,6 +181,7 @@
    <install as="Horde/Stringprep/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/Tests/ProfileTest.php" name="bundle/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/Tests/ProfileTest.php" />
    <install as="Horde/Stringprep/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/Tests/UnicodeUtilTest.php" name="bundle/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/Tests/UnicodeUtilTest.php" />
    <install as="Horde/Stringprep/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/UnicodeUtil.php" name="bundle/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/UnicodeUtil.php" />
+   <install as="CHANGES" name="doc/Horde/Stringprep/CHANGES" />
    <install as="Horde/Stringprep.php" name="lib/Horde/Stringprep.php" />
    <install as="LICENSE" name="LICENSE" />
   </filelist>
@@ -253,7 +261,7 @@
    <stability>
     <release>stable</release>
     <api>stable</api></stability>
-   <date>2017-10-17</date>
+   <date>2017-10-27</date>
    <license uri="http://opensource.org/licenses/lgpl-3.0.html">LGPL-3.0</license>
    <notes>
    </notes>
