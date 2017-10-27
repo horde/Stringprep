@@ -10,7 +10,7 @@
   <email>slusarz@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-09-19</date>
+ <date>2017-10-27</date>
  <version>
   <release>1.0.5</release>
   <api>1.0.0</api>
@@ -83,6 +83,8 @@
           </dir> <!-- /bundle/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/Tests -->
           <file name=".gitignore" role="php" />
           <file name=".travis.yml" role="php" />
+          <file name="composer.json" role="php" />
+          <file name="composer.lock" role="php" />
           <file name="LICENSE" role="php" />
           <file name="phpunit.xml" role="php" />
           <file name="Profile.php" role="php" />
@@ -148,6 +150,8 @@
    <install as="Horde/Stringprep/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/ProfileException.php" name="bundle/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/ProfileException.php" />
    <install as="Horde/Stringprep/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/README.md" name="bundle/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/README.md" />
    <install as="Horde/Stringprep/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/UnicodeUtil.php" name="bundle/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/UnicodeUtil.php" />
+   <install as="Horde/Stringprep/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/composer.json" name="bundle/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/composer.json" />
+   <install as="Horde/Stringprep/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/composer.lock" name="bundle/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/composer.lock" />
    <install as="Horde/Stringprep/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/doc/rfc3454.txt" name="bundle/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/doc/rfc3454.txt" />
    <install as="Horde/Stringprep/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/Profile/ISCSI.php" name="bundle/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/Profile/ISCSI.php" />
    <install as="Horde/Stringprep/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/Profile/Nameprep.php" name="bundle/vendor/znerol/php-stringprep/Znerol/Component/Stringprep/Profile/Nameprep.php" />
@@ -256,7 +260,7 @@
    <stability>
     <release>stable</release>
     <api>stable</api></stability>
-   <date>2017-09-19</date>
+   <date>2017-10-27</date>
    <license uri="http://opensource.org/licenses/lgpl-3.0.html">LGPL-3.0</license>
    <notes>
 * 
