@@ -1,0 +1,66 @@
+---
+1.0.5:
+  api: 1.0.0
+  state:
+    release: stable
+    api: stable
+  date: 2017-10-17
+  license:
+    identifier: LGPL-3.0
+    uri: http://opensource.org/licenses/lgpl-3.0.html
+  notes:
+1.0.4:
+  api: 1.0.0
+  state:
+    release: stable
+    api: stable
+  date: 2017-09-19
+  license:
+    identifier: LGPL-3.0
+    uri: http://opensource.org/licenses/lgpl-3.0.html
+  notes: |
+    [jan] Mark PHP 7 as supported.
+1.0.3:
+  api: 1.0.0
+  state:
+    release: stable
+    api: stable
+  date: 2016-07-02
+  license:
+    identifier: LGPL-3.0
+    uri: http://opensource.org/licenses/lgpl-3.0.html
+  notes: |
+    [jan] Update bundled code from github.
+1.0.2:
+  api: 1.0.0
+  state:
+    release: stable
+    api: stable
+  date: 2015-06-18
+  license:
+    identifier: LGPL-3.0
+    uri: http://opensource.org/licenses/lgpl-3.0.html
+  notes: |
+    [mms] Fix some autoloading issues.
+1.0.1:
+  api: 1.0.0
+  state:
+    release: stable
+    api: stable
+  date: 2014-11-18
+  license:
+    identifier: LGPL-3.0
+    uri: http://opensource.org/licenses/lgpl-3.0.html
+  notes: |
+    [mms] COPYING file did not contain the LGPL-3.0 addition to GPLv3.
+1.0.0:
+  api: 1.0.0
+  state:
+    release: stable
+    api: stable
+  date: 2014-10-14
+  license:
+    identifier: LGPL-3.0
+    uri: http://opensource.org/licenses/lgpl-3.0.html
+  notes: |
+    [mms] Initial release.
