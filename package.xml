@@ -21,7 +21,6 @@
  </stability>
  <license uri="http://opensource.org/licenses/lgpl-3.0.html">LGPL-3.0</license>
  <notes>
-* 
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
@@ -257,7 +256,6 @@
    <date>2017-10-17</date>
    <license uri="http://opensource.org/licenses/lgpl-3.0.html">LGPL-3.0</license>
    <notes>
-* 
    </notes>
   </release>
  </changelog>
