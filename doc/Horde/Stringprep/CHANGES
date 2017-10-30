@@ -1,0 +1,38 @@
+----------
+v1.0.5-git
+----------
+
+
+------
+v1.0.4
+------
+
+[jan] Mark PHP 7 as supported.
+
+
+------
+v1.0.3
+------
+
+[jan] Update bundled code from github.
+
+
+------
+v1.0.2
+------
+
+[mms] Fix some autoloading issues.
+
+
+------
+v1.0.1
+------
+
+[mms] COPYING file did not contain the LGPL-3.0 addition to GPLv3.
+
+
+------
+v1.0.0
+------
+
+[mms] Initial release.
