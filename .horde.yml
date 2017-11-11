@@ -1,9 +1,10 @@
 ---
 id: Stringprep
-name: Internationalized strings preparation library
-full: |-
+name: Stringprep
+full: Internationalized strings preparation library
+description: |-
   PHP implementation of RFC 3454 - Preparation of Internationalized Strings ("stringprep").
-description: Horde wrapper around the znerol/php-stringprep package.
+  Horde wrapper around the znerol/php-stringprep package.
 list: dev
 type: library
 authors:
