@@ -25,7 +25,7 @@ license:
   uri: http://opensource.org/licenses/lgpl-3.0.html
 dependencies:
   required:
-    php: ^5.3 || ^7
+    php: ^7
     ext:
       iconv: '*'
       intl: '*'

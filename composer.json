@@ -21,7 +21,7 @@
     ],
     "require": {
         "horde/horde-installer-plugin": "*",
-        "php": "^5.3 || ^7",
+        "php": "^7",
         "ext-iconv": "*",
         "ext-intl": "*"
     },
