@@ -3,22 +3,22 @@
  <name>Horde_Stringprep</name>
  <channel>pear.horde.org</channel>
  <summary>Internationalized strings preparation library</summary>
- <description>PHP implementation of RFC 3454 - Preparation of Internationalized Strings ("stringprep").
-Horde wrapper around the znerol/php-stringprep package.</description>
+ <description>PHP implementation library of RFC 3454 - Preparation of Internationalized Strings ("stringprep").
+A wrapper around the znerol/php-stringprep package.</description>
  <lead>
   <name>Michael Slusarz</name>
   <user>slusarz</user>
   <email>slusarz@horde.org</email>
-  <active>yes</active>
+  <active>no</active>
  </lead>
- <date>2017-11-11</date>
+ <date>2021-02-24</date>
  <version>
-  <release>1.0.5</release>
-  <api>1.0.0</api>
+  <release>2.0.0alpha1</release>
+  <api>2.0.0alpha1</api>
  </version>
  <stability>
-  <release>stable</release>
-  <api>stable</api>
+  <release>alpha</release>
+  <api>alpha</api>
  </stability>
  <license uri="http://opensource.org/licenses/lgpl-3.0.html">LGPL-3.0</license>
  <notes>
@@ -258,12 +258,12 @@ Horde wrapper around the znerol/php-stringprep package.</description>
   </release>
   <release>
    <version>
-    <release>1.0.5</release>
-    <api>1.0.0</api></version>
+    <release>2.0.0alpha1</release>
+    <api>2.0.0alpha1</api></version>
    <stability>
-    <release>stable</release>
-    <api>stable</api></stability>
-   <date>2017-11-11</date>
+    <release>alpha</release>
+    <api>alpha</api></stability>
+   <date>2021-02-24</date>
    <license uri="http://opensource.org/licenses/lgpl-3.0.html">LGPL-3.0</license>
    <notes>
 * 
