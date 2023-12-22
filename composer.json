@@ -14,10 +14,6 @@
     "version": "1.0.5",
     "time": "2017-11-11",
     "repositories": [
-        {
-            "type": "pear",
-            "url": "https://pear.horde.org"
-        }
     ],
     "require": {
         "php": "^5.3 || ^7",
@@ -25,8 +21,6 @@
         "ext-intl": "*"
     },
     "replace": {
-        "pear-pear.horde.org/Horde_Stringprep": "1.*",
-        "pear-horde/Horde_Stringprep": "1.*"
     },
     "autoload": {
         "psr-0": {
