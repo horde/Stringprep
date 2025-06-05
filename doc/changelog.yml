@@ -1,5 +1,17 @@
 ---
-2.0.0alpha4:
+2.0.0-alpha4:
+  api: 2.0.0-alpha1
+  state:
+    release: alpha
+    api: alpha
+  date: 2025-06-05
+  license:
+    identifier: LGPL-3.0-only
+    uri: http://opensource.org/licenses/lgpl-3.0.html
+  notes: |
+    chore: Clarify license SPDX tag LGPL-3.0-only
+    style: Apply php-cs-fixer php8.3+ rules
+2.0.0-alpha3:
   api: 2.0.0alpha1
   state:
     release: alpha
@@ -8,19 +20,10 @@
   license:
     identifier: LGPL-3.0
     uri: http://opensource.org/licenses/lgpl-3.0.html
-  notes: |+
-    
-2.0.0alpha3:
-  api: 2.0.0alpha1
-  state:
-    release: alpha
-    api: alpha
-  date: 2021-03-13
-  license:
-    identifier: LGPL-3.0
-    uri: http://opensource.org/licenses/lgpl-3.0.html
-  notes: |+
-2.0.0alpha2:
+  notes: |-
+    Original version string was 2.0.0alpha3
+    |+
+2.0.0-alpha2:
   api: 2.0.0alpha1
   state:
     release: alpha
@@ -29,8 +32,10 @@
   license:
     identifier: LGPL-3.0
     uri: http://opensource.org/licenses/lgpl-3.0.html
-  notes: |+
-2.0.0alpha1:
+  notes: |-
+    Original version string was 2.0.0alpha2
+    |+
+2.0.0-alpha1:
   api: 2.0.0alpha1
   state:
     release: stable
@@ -39,7 +44,8 @@
   license:
     identifier: LGPL-3.0
     uri: http://opensource.org/licenses/lgpl-3.0.html
-  notes: ~
+  notes: |
+    Original version string was 2.0.0alpha1
 1.0.4:
   api: 1.0.0
   state:
