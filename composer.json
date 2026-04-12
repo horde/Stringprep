@@ -21,6 +21,9 @@
     "require-dev": {},
     "suggest": {},
     "autoload": {
+        "psr-4": {
+            "Horde\\Stringprep\\": "src/"
+        },
         "psr-0": {
             "Horde_Stringprep": "lib/"
         }
