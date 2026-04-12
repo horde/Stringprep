@@ -51,7 +51,7 @@ class SASLprep extends Profile
    */
   protected function map($codepoints) {
     $codepoints = parent::map($codepoints);
-    $codepoints = static::applyMappingTable($codepoints, 'static::saslprepMapUnicodeSpaceToSpace');
+    $codepoints = static::applyMappingTable($codepoints, self::class . '::saslprepMapUnicodeSpaceToSpace');
     return $codepoints;
   }
 

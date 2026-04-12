@@ -113,7 +113,7 @@ class Profile{
    */
   protected function prohibit($codepoints) {
     foreach ($this->prohibit as $prohibit) {
-      array_walk($codepoints, 'static::validateCodepoint', 'Znerol\Component\Stringprep\RFC3454\\' . $prohibit. '::filter');
+      array_walk($codepoints, self::class . '::validateCodepoint', 'Znerol\Component\Stringprep\RFC3454\\' . $prohibit. '::filter');
     }
   }
 
@@ -138,11 +138,11 @@ class Profile{
         throw new ProfileException('Invalid bidirectional text');
       }
       // Ensure that there are'nt any L characters in this string.
-      array_walk($codepoints, 'static::validateCodepoint', 'Znerol\Component\Stringprep\RFC3454\D_2::filter');
+      array_walk($codepoints, self::class . '::validateCodepoint', 'Znerol\Component\Stringprep\RFC3454\D_2::filter');
     }
     else {
       // Ensure that there are'nt any R/AL characters in this string.
-      array_walk($codepoints, 'static::validateCodepoint', 'Znerol\Component\Stringprep\RFC3454\D_1::filter');
+      array_walk($codepoints, self::class . '::validateCodepoint', 'Znerol\Component\Stringprep\RFC3454\D_1::filter');
     }
   }
 
