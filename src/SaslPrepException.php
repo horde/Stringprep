@@ -16,6 +16,4 @@ use RuntimeException;
 /**
  * Exception thrown when a string fails SASLprep validation.
  */
-class SaslPrepException extends RuntimeException
-{
-}
+class SaslPrepException extends RuntimeException {}

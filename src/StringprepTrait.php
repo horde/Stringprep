@@ -127,9 +127,7 @@ trait StringprepTrait
      *
      * @throws SaslPrepException  If the codepoint is prohibited.
      */
-    protected function checkAdditionalProhibited(int $codepoint): void
-    {
-    }
+    protected function checkAdditionalProhibited(int $codepoint): void {}
 
     // ------------------------------------------------------------------
     // Core algorithm

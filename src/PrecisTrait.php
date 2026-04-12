@@ -24,6 +24,16 @@ use Normalizer;
 trait PrecisTrait
 {
     // ------------------------------------------------------------------
+    // ICU UScriptCode values — IntlChar does not expose these as constants
+    // ------------------------------------------------------------------
+
+    private const USCRIPT_GREEK = 14;
+    private const USCRIPT_HAN = 17;
+    private const USCRIPT_HEBREW = 19;
+    private const USCRIPT_HIRAGANA = 20;
+    private const USCRIPT_KATAKANA = 22;
+
+    // ------------------------------------------------------------------
     // Abstract configuration — each profile must implement these
     // ------------------------------------------------------------------
 
@@ -259,7 +269,7 @@ trait PrecisTrait
                     'ZERO WIDTH NON-JOINER not in valid joining context'
                 );
 
-            // CONTEXTJ: ZERO WIDTH JOINER (U+200D)
+                // CONTEXTJ: ZERO WIDTH JOINER (U+200D)
             case 0x200D:
                 if ($this->isAfterVirama($index, $codepoints)) {
                     return;
@@ -268,7 +278,7 @@ trait PrecisTrait
                     'ZERO WIDTH JOINER not after virama'
                 );
 
-            // CONTEXTO: MIDDLE DOT (U+00B7) — between 'l' characters only
+                // CONTEXTO: MIDDLE DOT (U+00B7) — between 'l' characters only
             case 0x00B7:
                 if ($index > 0
                     && $index < count($codepoints) - 1
@@ -280,41 +290,41 @@ trait PrecisTrait
                     'MIDDLE DOT not between U+006C (l) characters'
                 );
 
-            // CONTEXTO: GREEK LOWER NUMERAL SIGN (U+0375)
+                // CONTEXTO: GREEK LOWER NUMERAL SIGN (U+0375)
             case 0x0375:
                 if ($index < count($codepoints) - 1
                     && IntlChar::getIntPropertyValue(
                         $codepoints[$index + 1],
                         IntlChar::PROPERTY_SCRIPT
-                    ) === IntlChar::SCRIPT_GREEK) {
+                    ) === self::USCRIPT_GREEK) {
                     return;
                 }
                 throw new PrecisException(
                     'GREEK LOWER NUMERAL SIGN not followed by Greek character'
                 );
 
-            // CONTEXTO: HEBREW PUNCTUATION GERESH (U+05F3)
+                // CONTEXTO: HEBREW PUNCTUATION GERESH (U+05F3)
             case 0x05F3:
-            // CONTEXTO: HEBREW PUNCTUATION GERSHAYIM (U+05F4)
+                // CONTEXTO: HEBREW PUNCTUATION GERSHAYIM (U+05F4)
             case 0x05F4:
                 if ($index > 0
                     && IntlChar::getIntPropertyValue(
                         $codepoints[$index - 1],
                         IntlChar::PROPERTY_SCRIPT
-                    ) === IntlChar::SCRIPT_HEBREW) {
+                    ) === self::USCRIPT_HEBREW) {
                     return;
                 }
                 throw new PrecisException(
                     sprintf('Hebrew punctuation U+%04X not preceded by Hebrew character', $cp)
                 );
 
-            // CONTEXTO: KATAKANA MIDDLE DOT (U+30FB)
+                // CONTEXTO: KATAKANA MIDDLE DOT (U+30FB)
             case 0x30FB:
                 foreach ($codepoints as $other) {
                     $script = IntlChar::getIntPropertyValue($other, IntlChar::PROPERTY_SCRIPT);
-                    if ($script === IntlChar::SCRIPT_HIRAGANA
-                        || $script === IntlChar::SCRIPT_KATAKANA
-                        || $script === IntlChar::SCRIPT_HAN) {
+                    if ($script === self::USCRIPT_HIRAGANA
+                        || $script === self::USCRIPT_KATAKANA
+                        || $script === self::USCRIPT_HAN) {
                         return;
                     }
                 }
@@ -322,7 +332,7 @@ trait PrecisTrait
                     'KATAKANA MIDDLE DOT without Hiragana/Katakana/Han character in string'
                 );
 
-            // CONTEXTO: ARABIC-INDIC DIGITS (U+0660–U+0669)
+                // CONTEXTO: ARABIC-INDIC DIGITS (U+0660–U+0669)
             case 0x0660: case 0x0661: case 0x0662: case 0x0663: case 0x0664:
             case 0x0665: case 0x0666: case 0x0667: case 0x0668: case 0x0669:
                 foreach ($codepoints as $other) {
@@ -334,7 +344,7 @@ trait PrecisTrait
                 }
                 return;
 
-            // CONTEXTO: EXTENDED ARABIC-INDIC DIGITS (U+06F0–U+06F9)
+                // CONTEXTO: EXTENDED ARABIC-INDIC DIGITS (U+06F0–U+06F9)
             case 0x06F0: case 0x06F1: case 0x06F2: case 0x06F3: case 0x06F4:
             case 0x06F5: case 0x06F6: case 0x06F7: case 0x06F8: case 0x06F9:
                 foreach ($codepoints as $other) {
