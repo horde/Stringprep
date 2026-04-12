@@ -16,6 +16,4 @@ use RuntimeException;
 /**
  * Exception thrown when a string fails PRECIS profile validation (RFC 7564).
  */
-class PrecisException extends RuntimeException
-{
-}
+class PrecisException extends RuntimeException {}
