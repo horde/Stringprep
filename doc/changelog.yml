@@ -1,4 +1,21 @@
 ---
+2.0.0-beta1:
+  api: 2.0.0-beta1
+  state:
+    release: beta
+    api: beta
+  date: 2026-04-12
+  license:
+    identifier: LGPL-3.0-only
+    uri: https://spdx.org/licenses/LGPL-3.0-only.html
+  notes: |-
+    chore: update metadata. We now depend on ext-intl9
+    fix: update copyright header
+    docs: add README and UPGRADING guide
+    fix: Define missing constants
+    test: PHPUnit 11+ unit test suite for stringprep
+    feat: Native PHP ext-intl implementation of StringPrep and Precis
+    fix: Upstream @bytestream's PHP 8.2 deprecation fixes
 2.0.0-alpha4:
   api: 2.0.0-alpha1
   state:
