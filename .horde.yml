@@ -9,8 +9,7 @@ description: |-
 list: dev
 type: library
 authors:
-  -
-    name: Michael Slusarz
+  - name: Michael Slusarz
     user: slusarz
     email: slusarz@horde.org
     active: false
@@ -36,3 +35,12 @@ keywords:
   - rfc7564
   - rfc3454
 vendor: horde
+ci-platform:
+  '8.1': not resolvable
+  '8.2': not resolvable
+  '8.3': not resolvable
+  '8.4': not resolvable
+  '8.5': not resolvable
+  '8.6': not resolvable
+ci-platform-flags:
+  needs_installer_plugin: false
